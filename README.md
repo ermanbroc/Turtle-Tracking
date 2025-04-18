@@ -37,3 +37,29 @@ The current technology for tracking small turtles is radiotelemetry. This techno
 ##### -Note about receiver power:
 
 The receiver has no weight limit, and can be powered using a usb connected to a portable battery or extension cord
+
+### Wiring
+#### Transmitter: 
+
+#### Receiver:
+
+![LoRa Radio Board](https://github.com/ermanbroc/Turtle-Tracking/blob/main/Images/RadioBoard.png)
+![MicroSD Card Reader](https://github.com/ermanbroc/Turtle-Tracking/blob/main/Images/SDReader.png)
+
+##### Connections List:
+
+| MicroSD Card Reader | LoRa Radio Board |
+|---------------------|------------------|
+| 5V                  | USB              |
+| GND                 | GND              |
+| CLK                 | SCK              |
+| DO                  | MISO             |
+| DI                  | MOSI             |
+| CS                  | 10               |
+
+##### -Note about LoRa Board:
+
+In order to "connect" the LoRa Board to the radio network, you must also wire the dipole antenna to the ANT pin (check the bottom of the board).
+
+
+
